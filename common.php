@@ -8,9 +8,15 @@
 /**
  * Get content of csv file.
  *
- * @param $file_name
- * @param $header_rows
+ * @param string $file_name
+ *   File name to import.
+ * @param string $key_id
+ *   Identifier for the main (id) key.
+ * @param int $header_rows
+ *   How many rows are in the header.
+ *
  * @return array
+ *   Imported CSV.
  */
 function getCSV($file_name, $key_id, $header_rows = 1) {
   $data = [];
